@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="style.css">
+
+        <title>forest</title>
+       
+    </head>
+    <body>
+        <section class="navbar">
+        <div class="home">home</div>
+        <div class="about">About</div>
+        <div class="dash">Dash</div>
+        <div class="pro">Profile</div>
+        
+    </section>
+    <section class="body">
+        <div class="head">
+            <h3>Hai Aibal </h3>
+            <H4>Nice, to see you here. Hope your are right time here</H4>
+        </div>
+        <div class=" mid">
+            <input placeholder="Search" class="search "type="text">
+        </div>
+        <div class="cat" id="month">Catagory</div>
+            <div class="date">
+                
+                    <div class="datecard">
+                <H1 id="date">
+                    
+                </H1>
+                
+            </div>
+            
+            <div class="datecard">
+                <H1 id="date2">
+                    
+                </H1>
+                
+            </div>
+            
+            <div class="datecard">
+                <H1 id="date3">
+                    
+                </H1>
+                
+            </div>
+            
+            <div class="datecard">
+                <H1 id="date4">
+                    
+                </H1>
+                
+            </div>
+            
+            <div class="datecard">
+                <H1 id="date5">
+                    
+                </H1>
+                
+            </div>
+                
+            
+        </div>
+        
+        
+        
+    <div class="cat">Catagory</div>
+    <div class="grid">
+    
+    <div class="col1 div1"> 
+        <img src="insta.png" alt="" height="50x50">
+        INSTAGRAM</div>
+    
+    <div class="col2 div2"><img src="youtube.png" alt="" height="50x50">
+     YOUTUBE</div>
+    
+    
+    
+    
+    
+    </div>
+   <div class="grid">
+   
+   <div class="col1 div3"><img src="linkedin.png" alt="" height="50x50">
+    LINKEDIN</div>
+   
+   <div class="col2 div4"><img src="website.png" alt="" height="50x50"> 
+   WEBSITE</div>
+   
+   
+   
+   
+   
+   </div>
+    
+    
+    </section>
+    
+    
+    <div
+    <div class="aabout">
+        
+    </div>
+    
+    </body>
+    <script>
+var today = new Date();
+let month = today.getMonth();
+let dd = today.getDate(); 
+document.getElementById("date").innerHTML=dd;
+
+
+       
+let tomorrow=  new Date()
+tomorrow.setDate(today.getDate() + 1);
+let date2=tomorrow.getDate();
+document.getElementById("date2").innerHTML=date2;
+
+let tomorrow2=  new Date()
+tomorrow2.setDate(today.getDate() + 2);
+let date3=tomorrow2.getDate();
+document.getElementById("date3").innerHTML=date3;
+
+let tomorrow3=  new Date()
+tomorrow3.setDate(today.getDate() + 3);
+let date4=tomorrow3.getDate();
+document.getElementById("date4").innerHTML=date4;
+
+
+let tomorrow4=  new Date()
+tomorrow4.setDate(today.getDate() + 4);
+let date5=tomorrow4.getDate();
+document.getElementById("date5").innerHTML=date5;
+
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+const d = new Date();
+let aa=monthNames[d.getMonth()];
+document.getElementById("month").innerHTML=aa;
+    </script>
+    </html>
